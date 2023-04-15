@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { CircularProgress } from "@mui/material";
+import { Box, Button, CircularProgress } from "@mui/material";
 
 function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -14,10 +14,25 @@ function QuoteGenerator() {
     setQuote(response);
   }
 
-  useEffect(() => {
-    fetch(`https://api.goprogram.ai/inspiration?rand=${randomInteger(1, 1000)}`)
+  function fetchQuote() {
+    setIsLoading(true);
+    return fetch(
+      `https://api.goprogram.ai/inspiration?rand=${randomInteger(1, 1000)}`
+    )
       .then((response) => response.json())
       .then(handleResponseFinish);
+  }
+
+  const WriteQuote = () => {
+    return (
+      <div>
+        {quote?.quote} -<b>{quote?.author}</b>
+      </div>
+    );
+  };
+
+  useEffect(() => {
+    fetchQuote();
   }, []);
 
   if (isLoading) {
@@ -25,9 +40,17 @@ function QuoteGenerator() {
   }
 
   return (
-    <div>
-      {quote?.quote} -<b>{quote?.author}</b>
-    </div>
+    <Box display="flex" alignItems="center" flexDirection="column" gap="16px">
+      <WriteQuote />
+      <Button
+        onClick={() => {
+          fetchQuote();
+        }}
+        variant="outlined"
+      >
+        New Quote
+      </Button>
+    </Box>
   );
 }
 
