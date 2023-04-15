@@ -1,4 +1,4 @@
-import { AppBar, Box, Button, Toolbar } from "@mui/material";
+import { AppBar, Box, Button, Toolbar, Typography } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import classes from "./NavBar.module.css";
@@ -25,7 +25,11 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" className={classes.navbar}>
+    <AppBar
+      sx={{ backgroundColor: "black" }}
+      position="static"
+      className={classes.navbar}
+    >
       <Toolbar className={classes.navbar}>
         <Box
           width="100%"
@@ -34,7 +38,9 @@ function NavBar() {
           alignItems="center"
         >
           <Link to="/" className={classes.navbarLink}>
-            <h1 className={classes.title}>Quotes</h1>
+            <Typography variant="h3" className={classes.title}>
+              Quotes
+            </Typography>
           </Link>
           <Box display="flex" justifyContent="center" gap="16px">
             <LoginButton />

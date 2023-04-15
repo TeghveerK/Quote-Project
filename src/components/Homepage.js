@@ -1,16 +1,13 @@
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
-import NavBar from "./NavBar";
+import QuoteGenerator from "./QuoteGenerator";
 
 function Homepage() {
   return (
-    <React.Fragment>
-      <Typography variant="h1" component="h2">
-        Welcome
-      </Typography>
-      <p>Welcome to the website!</p>
-    </React.Fragment>
+    <Box display="flex" alignItems="center" mt="100px" flexDirection="column">
+      <Typography variant="h1">Welcome</Typography>
+      <QuoteGenerator />
+    </Box>
   );
 }
 
