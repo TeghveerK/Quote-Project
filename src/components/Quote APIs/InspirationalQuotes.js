@@ -5,7 +5,7 @@ function randomInteger(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function QuoteGenerator() {
+function InspirationalQuotes() {
   const [quote, setQuote] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
@@ -54,4 +54,4 @@ function QuoteGenerator() {
   );
 }
 
-export default QuoteGenerator;
+export default InspirationalQuotes;
