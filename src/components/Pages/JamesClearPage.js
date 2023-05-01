@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React from "react";
-import RandomQuote from "../Quote APIs/RandomQuote";
+import JamesClear from "../Quote APIs/JamesClear";
 
-function RandomPage() {
+function JamesClearPage() {
   return (
     <Box
       display="flex"
@@ -11,9 +11,9 @@ function RandomPage() {
       flexDirection="column"
       gap="16px"
     >
-      <RandomQuote />
+      <JamesClear />
     </Box>
   );
 }
 
-export default RandomPage;
+export default JamesClearPage;

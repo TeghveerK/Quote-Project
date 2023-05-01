@@ -14,6 +14,7 @@ import AnimePage from "./components/Pages/AnimePage";
 import RandomPage from "./components/Pages/RandomPage";
 import Kanye from "./components/Pages/Kanye";
 import Programming from "./components/Pages/Programming";
+import JamesClearPage from "./components/Pages/JamesClearPage";
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,7 @@ const router = createBrowserRouter([
       { path: "/random", element: <RandomPage /> },
       { path: "/kanye", element: <Kanye /> },
       { path: "/programming", element: <Programming /> },
+      { path: "/jamesclear", element: <JamesClearPage /> },
     ],
   },
 ]);

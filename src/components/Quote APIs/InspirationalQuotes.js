@@ -42,12 +42,7 @@ function InspirationalQuotes() {
   return (
     <Box display="flex" alignItems="center" flexDirection="column" gap="16px">
       <WriteQuote />
-      <Button
-        onClick={() => {
-          fetchQuote();
-        }}
-        variant="outlined"
-      >
+      <Button onClick={fetchQuote} variant="outlined">
         New Quote
       </Button>
     </Box>

@@ -28,6 +28,9 @@ function Homepage() {
       <Link component={ReactRouterLink} to="/programming">
         Programming Quotes
       </Link>
+      <Link component={ReactRouterLink} to="/jamesclear">
+        James Clear Quotes
+      </Link>
     </Box>
   );
 }
