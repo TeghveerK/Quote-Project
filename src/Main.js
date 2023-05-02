@@ -17,7 +17,7 @@ import Programming from "./components/Pages/Programming";
 import JamesClearPage from "./components/Pages/JamesClearPage";
 import DesignPage from "./components/Pages/DesignPage";
 import StoicismPage from "./components/Pages/StoicismPage";
-import Zen from "./components/Pages/Zen";
+import BreakingBad from "./components/Pages/BreakingBad";
 
 const router = createBrowserRouter([
   {
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       { path: "/jamesclear", element: <JamesClearPage /> },
       { path: "/design", element: <DesignPage /> },
       { path: "/stoicism", element: <StoicismPage /> },
-      { path: "/zen", element: <Zen /> },
+      { path: "/breakingbad", element: <BreakingBad /> },
     ],
   },
 ]);

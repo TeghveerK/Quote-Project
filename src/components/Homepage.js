@@ -16,6 +16,9 @@ function Homepage() {
       <Link component={ReactRouterLink} to="/anime">
         Anime
       </Link>
+      <Link component={ReactRouterLink} to="/breakingbad">
+        Breaking Bad
+      </Link>
       <Link component={ReactRouterLink} to="/design">
         Design
       </Link>
@@ -36,9 +39,6 @@ function Homepage() {
       </Link>
       <Link component={ReactRouterLink} to="/stoicism">
         Stoicism
-      </Link>
-      <Link component={ReactRouterLink} to="/zen">
-        Zen
       </Link>
     </Box>
   );

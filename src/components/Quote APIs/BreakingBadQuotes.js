@@ -1,7 +1,7 @@
 import { Box, Button, CircularProgress } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
-function ZenQuotes() {
+function BreakingBadQuotes() {
   const [isLoading, setIsLoading] = useState(true);
   const [quote, setQuote] = useState({});
 
@@ -13,7 +13,7 @@ function ZenQuotes() {
 
   function fetchQuote() {
     setIsLoading(true);
-    fetch("https://zenquotes.io/api/random")
+    fetch("https://api.breakingbadquotes.xyz/v1/quotes")
       .then((response) => response.json())
       .then(handleResponse);
   }
@@ -29,7 +29,7 @@ function ZenQuotes() {
   return (
     <Box display="flex" alignItems="center" flexDirection="column" gap="16px">
       <div>
-        {quote.quote} -<b>{quote.author}</b>
+        {quote[0].quote} -<b>{quote[0].author}</b>
       </div>
       <Button onClick={fetchQuote} variant="outlined">
         New Quote
@@ -38,4 +38,4 @@ function ZenQuotes() {
   );
 }
 
-export default ZenQuotes;
+export default BreakingBadQuotes;

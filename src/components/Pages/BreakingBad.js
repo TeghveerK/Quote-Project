@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React from "react";
-import ZenQuotes from "../Quote APIs/ZenQuotes";
+import BreakingBadQuotes from "../Quote APIs/BreakingBadQuotes";
 
-function Zen() {
+function BreakingBad() {
   return (
     <Box
       display="flex"
@@ -11,9 +11,9 @@ function Zen() {
       flexDirection="column"
       gap="16px"
     >
-      <ZenQuotes />
+      <BreakingBadQuotes />
     </Box>
   );
 }
 
-export default Zen;
+export default BreakingBad;
