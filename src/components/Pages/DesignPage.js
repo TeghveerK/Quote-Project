@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React from "react";
-import InspirationalQuotes from "../Quote APIs/InspirationalQuotes";
+import DesignQuotes from "../Quote APIs/DesignQuotes";
 
-function Inspiration() {
+function DesignPage() {
   return (
     <Box
       display="flex"
@@ -11,9 +11,9 @@ function Inspiration() {
       flexDirection="column"
       gap="16px"
     >
-      <InspirationalQuotes />
+      <DesignQuotes />
     </Box>
   );
 }
 
-export default Inspiration;
+export default DesignPage;

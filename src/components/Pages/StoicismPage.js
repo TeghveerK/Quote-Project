@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
 import React from "react";
-import InspirationalQuotes from "../Quote APIs/InspirationalQuotes";
+import StoicismQuotes from "../Quote APIs/StoicismQuotes";
 
-function Inspiration() {
+function StoicismPage() {
   return (
     <Box
       display="flex"
@@ -11,9 +11,9 @@ function Inspiration() {
       flexDirection="column"
       gap="16px"
     >
-      <InspirationalQuotes />
+      <StoicismQuotes />
     </Box>
   );
 }
 
-export default Inspiration;
+export default StoicismPage;

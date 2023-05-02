@@ -1,7 +1,7 @@
 import { Box, Button, CircularProgress } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
-function InspirationalQuote2() {
+function StoicismQuotes() {
   const [isLoading, setIsLoading] = useState(true);
   const [quote, setQuote] = useState({});
 
@@ -12,7 +12,7 @@ function InspirationalQuote2() {
 
   function fetchQuote() {
     setIsLoading(true);
-    fetch()
+    fetch("https://api.themotivate365.com/stoic-quote")
       .then((response) => response.json())
       .then(handleResponse);
   }
@@ -27,7 +27,9 @@ function InspirationalQuote2() {
 
   return (
     <Box display="flex" alignItems="center" flexDirection="column" gap="16px">
-      {quote.quoteText} -<b>{quote.quoteAuthor}</b>
+      <div>
+        {quote.quote.replace("@", "")} -<b>{quote.author}</b>
+      </div>
       <Button onClick={fetchQuote} variant="outlined">
         New Quote
       </Button>
@@ -35,4 +37,4 @@ function InspirationalQuote2() {
   );
 }
 
-export default InspirationalQuote2;
+export default StoicismQuotes;

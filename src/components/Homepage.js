@@ -13,23 +13,32 @@ function Homepage() {
       gap="16px"
     >
       <Typography variant="h1">Welcome</Typography>
+      <Link component={ReactRouterLink} to="/anime">
+        Anime
+      </Link>
+      <Link component={ReactRouterLink} to="/design">
+        Design
+      </Link>
       <Link component={ReactRouterLink} to="/inspiration">
         Inspiration
       </Link>
-      <Link component={ReactRouterLink} to="/anime">
-        Anime Quotes
-      </Link>
-      <Link component={ReactRouterLink} to="/random">
-        Random Quotes
+      <Link component={ReactRouterLink} to="/jamesclear">
+        James Clear
       </Link>
       <Link component={ReactRouterLink} to="/kanye">
-        Kanye Quotes
+        Kanye
       </Link>
       <Link component={ReactRouterLink} to="/programming">
-        Programming Quotes
+        Programming
       </Link>
-      <Link component={ReactRouterLink} to="/jamesclear">
-        James Clear Quotes
+      <Link component={ReactRouterLink} to="/random">
+        Random
+      </Link>
+      <Link component={ReactRouterLink} to="/stoicism">
+        Stoicism
+      </Link>
+      <Link component={ReactRouterLink} to="/zen">
+        Zen
       </Link>
     </Box>
   );

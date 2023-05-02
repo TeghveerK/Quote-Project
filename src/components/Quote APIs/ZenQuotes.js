@@ -1,18 +1,19 @@
 import { Box, Button, CircularProgress } from "@mui/material";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
-function ProgrammingQuotes() {
+function ZenQuotes() {
   const [isLoading, setIsLoading] = useState(true);
   const [quote, setQuote] = useState({});
 
   function handleResponse(response) {
     setIsLoading(false);
     setQuote(response);
+    console.log(response);
   }
 
   function fetchQuote() {
     setIsLoading(true);
-    fetch("https://programming-quotesapi.vercel.app/api/random")
+    fetch("https://zenquotes.io/api/random")
       .then((response) => response.json())
       .then(handleResponse);
   }
@@ -37,4 +38,4 @@ function ProgrammingQuotes() {
   );
 }
 
-export default ProgrammingQuotes;
+export default ZenQuotes;

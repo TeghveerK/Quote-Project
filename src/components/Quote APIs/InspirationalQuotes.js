@@ -17,7 +17,7 @@ function InspirationalQuotes() {
   function fetchQuote() {
     setIsLoading(true);
     return fetch(
-      `https://api.goprogram.ai/inspiration?rand=${randomInteger(1, 1000)}`
+      `https://api.goprogram.ai/inspiration?rand=${randomInteger(1, 100000)}`
     )
       .then((response) => response.json())
       .then(handleResponseFinish);
