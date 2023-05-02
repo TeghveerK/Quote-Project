@@ -19,8 +19,14 @@ function Homepage() {
       <Link component={ReactRouterLink} to="/breakingbad">
         Breaking Bad
       </Link>
+      <Link component={ReactRouterLink} to="/dark">
+        Dark (TV Series)
+      </Link>
       <Link component={ReactRouterLink} to="/design">
         Design
+      </Link>
+      <Link component={ReactRouterLink} to="/gameofthrones">
+        Game of Thrones
       </Link>
       <Link component={ReactRouterLink} to="/inspiration">
         Inspiration
@@ -31,14 +37,26 @@ function Homepage() {
       <Link component={ReactRouterLink} to="/kanye">
         Kanye
       </Link>
+      <Link component={ReactRouterLink} to="/lucifer">
+        Lucifer
+      </Link>
+      <Link component={ReactRouterLink} to="/moneyheist">
+        Money Heist
+      </Link>
       <Link component={ReactRouterLink} to="/programming">
         Programming
       </Link>
       <Link component={ReactRouterLink} to="/random">
         Random
       </Link>
+      <Link component={ReactRouterLink} to="/ronswanson">
+        Ron Swanson
+      </Link>
       <Link component={ReactRouterLink} to="/stoicism">
         Stoicism
+      </Link>
+      <Link component={ReactRouterLink} to="/strangerthings">
+        Stranger Things
       </Link>
     </Box>
   );

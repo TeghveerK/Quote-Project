@@ -1,7 +1,7 @@
 import { Box, Button, CircularProgress } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
-function BreakingBadQuotes() {
+function BreakingBad2() {
   const [isLoading, setIsLoading] = useState(true);
   const [quote, setQuote] = useState({});
 
@@ -12,7 +12,9 @@ function BreakingBadQuotes() {
 
   function fetchQuote() {
     setIsLoading(true);
-    fetch("https://api.breakingbadquotes.xyz/v1/quotes")
+    fetch(
+      "https://web-series-quotes-api.deta.dev/quote/?series=breaking_bad&count=1"
+    )
       .then((response) => response.json())
       .then(handleResponse);
   }
@@ -37,4 +39,4 @@ function BreakingBadQuotes() {
   );
 }
 
-export default BreakingBadQuotes;
+export default BreakingBad2;

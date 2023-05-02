@@ -18,6 +18,12 @@ import JamesClearPage from "./components/Pages/JamesClearPage";
 import DesignPage from "./components/Pages/DesignPage";
 import StoicismPage from "./components/Pages/StoicismPage";
 import BreakingBad from "./components/Pages/BreakingBad";
+import GameOfThronesPage from "./components/Pages/GameOfThronesPage";
+import LuciferPage from "./components/Pages/LuciferPage";
+import RonSwansonPage from "./components/Pages/RonSwansonPage";
+import StrangerThingsPage from "./components/Pages/StrangerThingsPage";
+import Dark from "./components/Pages/Dark";
+import MoneyHeistPage from "./components/Pages/MoneyHeistPage";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +44,12 @@ const router = createBrowserRouter([
       { path: "/design", element: <DesignPage /> },
       { path: "/stoicism", element: <StoicismPage /> },
       { path: "/breakingbad", element: <BreakingBad /> },
+      { path: "/gameofthrones", element: <GameOfThronesPage /> },
+      { path: "/lucifer", element: <LuciferPage /> },
+      { path: "/ronswanson", element: <RonSwansonPage /> },
+      { path: "/strangerthings", element: <StrangerThingsPage /> },
+      { path: "/dark", element: <Dark /> },
+      { path: "/moneyheist", element: <MoneyHeistPage /> },
     ],
   },
 ]);

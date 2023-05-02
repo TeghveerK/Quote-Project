@@ -1,7 +1,7 @@
 import { Box, Button, CircularProgress } from "@mui/material";
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
-function BreakingBadQuotes() {
+function LuciferQuotes() {
   const [isLoading, setIsLoading] = useState(true);
   const [quote, setQuote] = useState({});
 
@@ -12,7 +12,7 @@ function BreakingBadQuotes() {
 
   function fetchQuote() {
     setIsLoading(true);
-    fetch("https://api.breakingbadquotes.xyz/v1/quotes")
+    fetch("https://lucifer-quotes.vercel.app/api/quotes")
       .then((response) => response.json())
       .then(handleResponse);
   }
@@ -37,4 +37,4 @@ function BreakingBadQuotes() {
   );
 }
 
-export default BreakingBadQuotes;
+export default LuciferQuotes;

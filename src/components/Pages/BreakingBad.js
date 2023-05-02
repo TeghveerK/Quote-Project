@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 import BreakingBadQuotes from "../Quote APIs/BreakingBadQuotes";
+import BreakingBad2 from "../Quote APIs/BreakingBad2";
 
 function BreakingBad() {
   return (
@@ -12,6 +13,7 @@ function BreakingBad() {
       gap="16px"
     >
       <BreakingBadQuotes />
+      <BreakingBad2 />
     </Box>
   );
 }
