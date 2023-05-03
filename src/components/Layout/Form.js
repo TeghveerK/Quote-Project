@@ -27,9 +27,10 @@ function Form(props) {
               alignItems: "center",
               height: "100%",
               padding: "16px",
+              width: "400px",
             }}
           >
-            <Box flexDirection="column" display="flex" gap="24px">
+            <Box flexDirection="column" display="flex" gap="24px" width="360px">
               <FormHeader />
               <TextField
                 type="email"
