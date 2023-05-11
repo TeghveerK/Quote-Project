@@ -1,5 +1,4 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Form from "./components/Layout/Form";
 import LandingPage from "./components/Layout/Home";
 import Redirect from "./components/Redirect";
 import "@fontsource/roboto/300.css";
@@ -25,6 +24,8 @@ import RonSwansonQuote from "./quote-configs/ronswanson";
 import StrangerThingsQuote from "./quote-configs/strangerthings";
 import DarkQuote from "./quote-configs/dark";
 import MoneyHeistQuote from "./quote-configs/moneyheist";
+import LoginForm from "./components/Layout/LoginForm";
+import RegisterForm from "./components/Layout/RegisterForm";
 
 let config = [];
 
@@ -52,8 +53,8 @@ const router = createBrowserRouter([
       { path: "/", element: <Homepage config={config} /> },
       { path: "/redirect", element: <Redirect /> },
       { path: "/home", element: <LandingPage /> },
-      { path: "/login", element: <Form type="login" /> },
-      { path: "/register", element: <Form type="register" /> },
+      { path: "/login", element: <LoginForm /> },
+      { path: "/register", element: <RegisterForm /> },
       { path: "/:quote", element: <QuotePage config={config} /> },
     ],
   },
